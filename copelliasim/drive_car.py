@@ -26,6 +26,7 @@ def sysCall_init():
     point = sim.getObject("/Point")
     chassis = sim.getObject("/Chassis")
     
+    # make trace drawing object
     point_trace = sim.addDrawingObject(sim.drawing_linestrip, 5, 0, -1, 100_000, [1,0,0])
     
     # add graph, graphstream
